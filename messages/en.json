@@ -1,5 +1,70 @@
 {
-    "Landing": {
-        "title": "About us"
+    "Partners": {
+        "hero": {
+            "minitext": "Simplify and Verify Applications",
+            "title": "Empower Your Academic Journey Now",
+            "subtext": "Empowering African students with simplified document verification, financial assessments, and application processes for higher education access.",
+            "buttontext": "Join Waitlist"
+        },
+        "main": {
+            "title": "Do more with",
+            "title_colour": "Doculet",
+            "lists": {
+                "item1": {
+                    "title": "Document Management",
+                    "subtext": "Efficient document management improves workflow by reducing time spent searching for files and eliminating redundant tasks. "
+                },
+                "item2": {
+                    "title": "Financial Verification",
+                    "subtext": "Ensure financial accuracy by implementing robust verification processes that minimize errors and discrepancies. "
+                },
+                "item3": {
+                    "title": "Application Tracking",
+                    "subtext": "Effortlessly track the progress of your applications with a user-friendly system that offers real-time updates."
+                }
+            }
+        },
+        "whatwedo": {
+            "minitext": "What we do",
+            "title": "Easy Applications & Hassle-free Process",
+            "subtext": "Doculet revolutionizes college application with a centralized platform for document verification and financial assessments, ensuring a seamless access.",
+            "buttontext": "Get Started",
+            "buttontext2": "Schedule a Call"
+
+
+        },
+        "article": {
+            "title": "We are trusted by",
+            "title_colour": "2500+",
+            "title_text": "people.",
+            "subtext": "Here's why you should send money with us ",
+            "buttontext": "Get Started",
+            "lists": {
+                "item1": {
+                    "title": "Lorem ipsum dolor",
+                    "subtext": "Efficient document management improves workflow by reducing time spent searching for files and eliminating redundant tasks. "
+                },
+                "item2": {
+                    "title": "Financial Verification",
+                    "subtext": "Ensure financial accuracy by implementing robust verification processes that minimize errors and discrepancies. "
+                },
+                "item3": {
+                    "title": "Application Tracking",
+                    "subtext": "Effortlessly track the progress of your applications with a user-friendly system that offers real-time updates."
+                },
+                "item4": {
+                    "title": "Application Tracking",
+                    "subtext": "Effortlessly track the progress of your applications with a user-friendly system that offers real-time updates."
+                }
+            }
+        }
+    },
+    "Contacts": {
+        "title": "Contact US",
+        "subtext": "Our Team is Here to Help",
+        "buttontext": "Contact support"
+    },
+    "Footer": {
+        "title": "Doculet stands at the forefront of revolutionizing college applications by providing a centralized platform that streamlines document verification and financial assessments."
     }
 }

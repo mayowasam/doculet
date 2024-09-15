@@ -13,10 +13,22 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-cabinet)"],
       },
+      screens: {
+        xl: "1280px",
+        "2xl": "1536px",
+        widescreen: {
+          raw: "(min-aspect-ratio: 3/2)",
+        },
+        tallscreen: {
+          raw: "(max-aspect-ratio: 13/20)",
+        },
+      },
       colors: {
-        salad: "rgba(77, 174, 55, 1)",
-        darksalad: "rgba(0, 70, 76, 1)",
-        bgyellow: "rgba(253, 251, 245, 1)",
+        yellowtext: "rgba(249, 174, 25)",
+        greytext: "rgba(97, 102, 114)",
+        bluetext: "rgba(0, 64, 193)",
+        lightbluetext:"rgba(239, 247, 255)",
+        blacktext:"rgba(15, 26, 42)"
       },
       keyframes: {
         "open-menu": {
@@ -24,9 +36,14 @@ const config: Config = {
           "80%": { transform: "scaleY(1.2)" },
           "100%": { transform: "scaleY(1)" },
         },
+        "marquee": {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
+        "marquee": 'marquee 25s linear infinite',
       },  
     },
   },
