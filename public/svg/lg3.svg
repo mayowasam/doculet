@@ -1,12 +1,10 @@
 <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_2227_3578)">
-<rect x="27.952" y="18.7947" width="40.2453" height="40.2453" rx="20.1227" fill="white"/>
-<path d="M48.0745 48.0641C53.1261 48.0641 57.2212 43.969 57.2212 38.9174C57.2212 33.8659 53.1261 29.7708 48.0745 29.7708C43.023 29.7708 38.9279 33.8659 38.9279 38.9174C38.9279 43.969 43.023 48.0641 48.0745 48.0641Z" stroke="#BB8111" stroke-width="1.82933" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M48.0745 44.4054C51.1055 44.4054 53.5625 41.9484 53.5625 38.9174C53.5625 35.8865 51.1055 33.4294 48.0745 33.4294C45.0436 33.4294 42.5865 35.8865 42.5865 38.9174C42.5865 41.9484 45.0436 44.4054 48.0745 44.4054Z" stroke="#BB8111" stroke-width="1.82933" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M48.0745 40.7468C49.0848 40.7468 49.9038 39.9278 49.9038 38.9175C49.9038 37.9072 49.0848 37.0881 48.0745 37.0881C47.0641 37.0881 46.2451 37.9072 46.2451 38.9175C46.2451 39.9278 47.0641 40.7468 48.0745 40.7468Z" stroke="#BB8111" stroke-width="1.82933" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="27.672" y="18.5867" width="40.2453" height="40.2453" rx="20.1227" fill="white"/>
+<path d="M43.2212 43.2827L52.3679 34.136M52.3679 34.136H43.2212M52.3679 34.136V43.2827" stroke="black" stroke-width="1.82933" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_2227_3578" x="0.512028" y="0.501346" width="95.1254" height="95.1254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_2227_3578" x="0.231998" y="0.293338" width="95.1254" height="95.1254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="9.14667"/>

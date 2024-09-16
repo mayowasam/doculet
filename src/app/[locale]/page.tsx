@@ -70,7 +70,7 @@ export default function Home() {
             </div>
             <div className="">
               <ul className="flex items-center justify-center gap-8">
-                <li>Contact</li>
+                <li className="text-white">Contact</li>
                 <li>
                   <span className="flex items-center gap-2">
                     <Image
@@ -80,7 +80,9 @@ export default function Home() {
                       height={20}
                     />
                     {' '}
-                    <DownOutlined className="text-xs font-bold" />
+                    <div className="text-white">
+                    <DownOutlined className="text-xs font-bold text-white" />
+                    </div>
                   </span>
                 </li>
               </ul>
@@ -89,14 +91,7 @@ export default function Home() {
 
           <div id="" className="flex flex-col items-center justify-center mt-16 p-2">
             <div className="flex items-center justify-center gap-2 text-[#344054] bg-white rounded-2xl px-2 py-1">
-              <span>
-                <Image
-                  src="/svg/transactions.svg"
-                  alt="transactions"
-                  width={15}
-                  height={15}
-                />
-              </span>
+              
               <span className="text-xs font-semibold">{t('hero.minitext')}</span>
             </div>
             <h1 className="text-4xl text-white md:text-5xl font-bold py-6 ">{t('hero.title')}</h1>
