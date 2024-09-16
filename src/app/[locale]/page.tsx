@@ -52,8 +52,8 @@ export default function Home() {
     // <div className="font-[family-name:var(--font-geist-sans)]">
     <div className="bg-white">
 
-      <header className='md:max-w-[1540px] mx-auto relative isolate'>
-        <div className="bg-[#001F71] md:bg-[url('/partners/hero.webp')] md:min-h-screen lg:min-h-[800px] bg-cover bg-no-repeat">
+      <header className="bg-[#001F71] lg:bg-[url('/partners/hero.webp')] min-h-[500px] lg:min-h-[800px] bg-cover bg-no-repeat">
+        <div className="md:max-w-[1540px] mx-auto relative isolate ">
           <nav className="w-full flex items-center justify-between py-4 p-2">
             <div>
               <Link href="/">
@@ -175,14 +175,14 @@ export default function Home() {
           <h2 className="text-white text-4xl md:text-5xl font-bold md:max-w-[500px] py-6">
             {t('whatwedo.title')}
           </h2>
-          <p className="md:max-w-[500px] pb-2">
+          <p className="text-white md:max-w-[500px] pb-2">
             {t('whatwedo.firsttext')}
           </p>
-          <p className="md:max-w-[500px]">
+          <p className=" text-white md:max-w-[500px]">
             {t('whatwedo.subtext')}
           </p>
 
-          <div className="flex gap-3 py-8">
+          <div className="flex flex-col md:flex-row gap-3 py-8">
             <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank"  icon={<RightOutlined className="text-sm" />} iconPosition="end"> {t('whatwedo.buttontext')}</Button>
             <Button type="text" icon={<InfoCircleOutlined />} style={{ color: "white" }}> {t('whatwedo.buttontext2')}</Button>
           </div>
