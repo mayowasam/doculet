@@ -53,7 +53,7 @@ export default function Home() {
     <div className="bg-white">
 
       <header className='md:max-w-[1540px] mx-auto relative isolate'>
-        <div className="bg-[url('/partners/hero.webp')] md:min-h-screen lg:min-h-[800px] bg-cover bg-no-repeat">
+        <div className="bg-[#001F71] md:bg-[url('/partners/hero.webp')] md:min-h-screen lg:min-h-[800px] bg-cover bg-no-repeat">
           <nav className="w-full flex items-center justify-between py-4 p-2">
             <div>
               <Link href="/">
@@ -202,9 +202,6 @@ export default function Home() {
               <p className="md:max-w-[250px] text-black text-2xl font-bold pb-4"><span>{t('article.title')}</span> <span className="text-yellowtext">{t('article.title_colour')}</span> <span>{t('article.title_text')}</span></p>
               <span className="text-greytext">{t('article.subtext')}</span>
 
-              <div className="mt-3">
-                <a href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' className="text-blacktext ">{t('article.buttontext')}</a>
-              </div>
             </div>
 
           </div>
@@ -217,7 +214,7 @@ export default function Home() {
               <li className="text-greytext">Streamline your admissions and credential verification processes</li>
             </ul>
             <div className="mt-6">
-              <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank" icon={<RightOutlined className="text-sm" />} iconPosition="end"> {t('whatwedo.buttontext')}</Button>
+              <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank" icon={<RightOutlined className="text-sm text-blue-500" />} iconPosition="end"> {t('article.buttontext')}</Button>
 
             </div>
 
