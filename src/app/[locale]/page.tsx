@@ -174,7 +174,7 @@ export default function Home() {
 
       </section>
 
-      <section className="md:max-w-[1540px] mx-auto bg-[url('/partners/bg_globe.webp')] bg-cover bg-no-repeat md:min-h-[900px]">
+      <section className="md:max-w-[1540px] mx-auto bg-[url('/partners/bg_globe.webp')] bg-cover bg-no-repeat md:min-h-[900px] flex items-center">
         <div className="p-2 pt-12 md:p-12 ">
           <span className="text-yellowtext text-sm p-2 bg-white rounded-xl">{t('whatwedo.minitext')}</span>
           <h2 className="text-white text-4xl md:text-5xl font-bold md:max-w-[500px] py-6">
@@ -210,7 +210,7 @@ export default function Home() {
           </div>
 
           <div className="md:w-1/2 md:pt-12">
-            <h3 className="font-bold text-blacktext text-3xl">Be at the Forefront</h3>
+            <h3 className="font-bold text-blacktext text-3xl pb-6">Be at the Forefront</h3>
             <ul className="list-disc text-sm ml-4 space-y-3">
               <li className="text-greytext">Shape the development of cutting-edge verification technology</li>
               <li className="text-greytext">Enhance your institution&aposs global reputation for innovation</li>
