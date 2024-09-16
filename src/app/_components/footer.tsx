@@ -13,13 +13,13 @@ export default function Footer() {
 
 
     const companyNavigation = [
-        { name: 'About', href: '/about' },
-        { name: 'Privacy & Policy', href: '/privacy-policy' },
+        { name: 'About', href: '/' },
+        { name: 'Privacy & Policy', href: '/' },
     ]
 
     const supportNavigation = [
-        { name: 'Get Help', href: '/contact' },
-        { name: 'FaQs', href: '/faqs' },
+        { name: 'Get Help', href: '/' },
+        { name: 'FaQs', href: '/' },
     ]
     return (
         <footer
@@ -42,8 +42,8 @@ export default function Footer() {
                             />
                         </Link>
 
-                            <p className='text-base'>{t('title')}</p>
-                            <div className='text-3xl flex gap-3 items-center py-5'>
+                            <p className='text-base text-greytext'>{t('title')}</p>
+                            <div className='text-3xl flex gap-8 items-center py-5'>
                                 <a href="" target='_blank' className='text-[#001F71]'><TwitterOutlined  /></a>
                                 <a href="" target='_blank' className='text-[#001F71]'><InstagramOutlined /></a>
                                 <a href="" target='_blank'className='text-[#001F71]'> <LinkedinOutlined color="#001F71"/></a>
@@ -63,7 +63,7 @@ export default function Footer() {
 
                                     {companyNavigation.map(item => (
                                         <li key={item.href}>
-                                            <Link href={item.href} className={`hover:text-saladgreen text-sm ${pathname.includes(item.href) ? "text-saladgreen" : ""}`}>{item.name}</Link>
+                                            <Link href={item.href} className={` text-sm text-greytext ${pathname.includes(item.href) ? "text-saladgreen" : ""}`}>{item.name}</Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -75,7 +75,7 @@ export default function Footer() {
 
                                     {supportNavigation.map(item => (
                                         <li key={item.href}>
-                                            <Link href={item.href} className={`hover:text-saladgreen text-sm ${pathname.includes(item.href) ? "text-saladgreen" : ""}`}>{item.name}</Link>
+                                            <Link href={item.href} className={`text-greytext  text-sm ${pathname.includes(item.href) ? "text-saladgreen" : ""}`}>{item.name}</Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -87,8 +87,8 @@ export default function Footer() {
 
 
 
-                    <div className="">
-                        <p id="year" className="text-sm">
+                    <div className="mt-20">
+                        <p id="year" className="text-sm text-greytext">
                             &copy; {new Date().getUTCFullYear()} Doculet. All rights reserved
                         </p>
 

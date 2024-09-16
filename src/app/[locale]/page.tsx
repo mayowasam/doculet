@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
-import { DownOutlined, PhoneOutlined, RightOutlined } from "@ant-design/icons";
+import { DownOutlined, InfoCircleOutlined, RightOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import Contact from "../_components/contact";
 import Footer from "../_components/footer";
@@ -9,9 +9,9 @@ import Link from "next/link";
 export default function Home() {
   const t = useTranslations('Partners');
   const keys = [
-    { name: 'item1', image: "/svg/dollars.svg" },
-    { name: 'item2', image: "/svg/arrowright.svg" },
-    { name: 'item3', image: "/svg/arrowdown.svg" }] as const;
+    { name: 'item1', image: "/svg/dollars.svg", points: ['point1', 'point2', 'point3'] },
+    { name: 'item2', image: "/svg/arrowdown.svg", points: ['point1', 'point2', 'point3'] },
+    { name: 'item3', image: "/svg/arrowright.svg", points: ['point1', 'point2', 'point3'] }] as const;
 
   const services = [
     { name: 'item1', image: "/svg/lg1.svg" },
@@ -102,11 +102,9 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold py-6 ">{t('hero.title')}</h1>
             <p className="md:max-w-[700px] md:text-center">{t('hero.subtext')}</p>
 
-            <div className="md:min-w-[500px] bg-white p-1 rounded-lg my-8">
-              <div className="w-full flex items-center ">
-                <input className="md:w-2/3 border-0 outline-0 text-blacktext p-3" type="text" placeholder="Enter your mail" />
-                <button className="md:w-1/3 bg-[#F3A753] py-3 px-5 rounded-xl">{t('hero.buttontext')}</button>
-              </div>
+            <div className="md:max-w-[500px] py-6">
+              <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' icon={<RightOutlined className="text-sm" />} target="_blank" iconPosition="end"> {t('whatwedo.buttontext')}</Button>
+
             </div>
           </div>
         </div>
@@ -130,7 +128,7 @@ export default function Home() {
 
       </section>
 
-      <section id="" className="bg-white text-blacktext py-12 px-2">
+      <section id="list" className="bg-white text-blacktext py-12 px-2">
         <div className="md:max-w-[900px] mx-auto relative isolate flex flex-col md:flex-row items-center gap-6 ">
           <div className="md:w-1/2">
             <Image
@@ -146,29 +144,29 @@ export default function Home() {
             <div>
               <ul className="space-y-3">
                 {keys.map((key) => (
-                  <li key={key.name} className="flex items-start gap-3">
-                    <div className="">
+                  <li key={key.name}>
+                    <div className="flex items-start gap-3">
                       <Image
-                        className=""
                         src={key.image}
                         alt={key.name}
-                        width={100}
+                        width={50}
                         height={50}
                       />
-                    </div>
+                      <div>
+                        <p className="font-bold text-base pb-3">{t(`main.lists.${key.name}.title`)}</p>
 
-                    <div>
-                      <p className="font-bold text-base pb-2">{t(`main.lists.${key.name}.title`)}</p>
-                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point1`)}</p>
-                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point2`)}</p>
-                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point3`)}</p>
-                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point4`)}</p>
+                        <ul className="list-disc ml-3 text-sm space-y-1">
+                          {key.points.map((item) => (
+                            <li key={item}>{t(`main.lists.${key.name}.list.${item}`)}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </li>
                 ))}
               </ul>
-
             </div>
+
 
           </div>
 
@@ -176,7 +174,7 @@ export default function Home() {
 
       </section>
 
-      <section className="md:max-w-[1540px] mx-auto bg-[url('/partners/bg_globe.svg')] bg-cover bg-no-repeat md:min-h-[900px]">
+      <section className="md:max-w-[1540px] mx-auto bg-[url('/partners/bg_globe.webp')] bg-cover bg-no-repeat md:min-h-[900px]">
         <div className="p-2 pt-12 md:p-12 ">
           <span className="text-yellowtext text-sm p-2 bg-white rounded-xl">{t('whatwedo.minitext')}</span>
           <h2 className="text-white text-4xl md:text-5xl font-bold md:max-w-[500px] py-6">
@@ -190,8 +188,8 @@ export default function Home() {
           </p>
 
           <div className="flex gap-3 py-8">
-            <Button icon={<RightOutlined className="text-sm" />} iconPosition="end"> {t('whatwedo.buttontext')}</Button>
-            <Button type="text" icon={<PhoneOutlined />} style={{ color: "white" }}> {t('whatwedo.buttontext2')}</Button>
+            <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank"  icon={<RightOutlined className="text-sm" />} iconPosition="end"> {t('whatwedo.buttontext')}</Button>
+            <Button type="text" icon={<InfoCircleOutlined />} style={{ color: "white" }}> {t('whatwedo.buttontext2')}</Button>
           </div>
         </div>
 
@@ -205,7 +203,7 @@ export default function Home() {
               <span className="text-greytext">{t('article.subtext')}</span>
 
               <div className="mt-3">
-                <a href="/" className="text-blacktext ">{t('article.buttontext')}</a>
+                <a href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' className="text-blacktext ">{t('article.buttontext')}</a>
               </div>
             </div>
 
@@ -218,6 +216,11 @@ export default function Home() {
               <li className="text-greytext">Enhance your institution&aposs global reputation for innovation</li>
               <li className="text-greytext">Streamline your admissions and credential verification processes</li>
             </ul>
+            <div className="mt-6">
+              <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank" icon={<RightOutlined className="text-sm" />} iconPosition="end"> {t('whatwedo.buttontext')}</Button>
+
+            </div>
+
 
           </div>
 
