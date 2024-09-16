@@ -1,11 +1,11 @@
 'use client'
 
+import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
 import { FloatButton } from 'antd';
-// import Image from 'next/image';
-import Link from 'next/link';
-import { TwitterOutlined, InstagramFilled, LinkedinFilled } from '@ant-design/icons';
-import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
     const pathname = usePathname();
@@ -30,23 +30,24 @@ export default function Footer() {
                 <div className='md:max-w-[980px] mx-auto'>
                     <div className='flex flex-col md:flex-row gap-4 justify-between'>
                         <div className='md:w-[50%] space-y-6'>
-                            {/* <Link href="/">
-                            <span className="sr-only">Your Company</span>
+                            <Link href="/">
+                            <span className="sr-only">Doculet</span>
                             <Image
                                 className="h-8 w-auto"
-                                alt="My Company"
-                                src="/landing/salad-logo.svg"
+                                alt="Doculet"
+                                src="/svg/Doculetlogo.svg"
                                 width={100}
                                 height={100}
 
                             />
-                        </Link> */}
+                        </Link>
 
                             <p className='text-base'>{t('title')}</p>
                             <div className='text-3xl flex gap-3 items-center py-5'>
-                                <a href="https://twitter.com/saladafrica" target='_blank'><TwitterOutlined color="red" /></a>
-                                <a href="https://www.instagram.com/salad.africa/" target='_blank'><InstagramFilled /></a>
-                                <a href="https://www.linkedin.com/company/saladafrica/mycompany/?viewAsMember=true" target='_blank'> <LinkedinFilled /></a>
+                                <a href="" target='_blank' className='text-[#001F71]'><TwitterOutlined  /></a>
+                                <a href="" target='_blank' className='text-[#001F71]'><InstagramOutlined /></a>
+                                <a href="" target='_blank'className='text-[#001F71]'> <LinkedinOutlined color="#001F71"/></a>
+                                <a href="" target='_blank'className='text-[#001F71]'> <FacebookOutlined  color="#001F71"/></a>
 
 
                             </div>

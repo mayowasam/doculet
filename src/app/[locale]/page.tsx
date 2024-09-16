@@ -4,6 +4,7 @@ import { DownOutlined, PhoneOutlined, RightOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import Contact from "../_components/contact";
 import Footer from "../_components/footer";
+import Link from "next/link";
 
 export default function Home() {
   const t = useTranslations('Partners');
@@ -22,21 +23,30 @@ export default function Home() {
     '/svg/logos/Logo1.svg',
     '/svg/logos/Logo2.svg',
     '/svg/logos/Logo3.svg',
-    '/svg/logos/Logo4.svg',
-    '/svg/logos/Logo5.svg',
-    '/svg/logos/Logo6.svg',
     '/svg/logos/Logo1.svg',
     '/svg/logos/Logo2.svg',
     '/svg/logos/Logo3.svg',
-    '/svg/logos/Logo4.svg',
-    '/svg/logos/Logo5.svg',
-    '/svg/logos/Logo6.svg',
     '/svg/logos/Logo1.svg',
     '/svg/logos/Logo2.svg',
     '/svg/logos/Logo3.svg',
-    '/svg/logos/Logo4.svg',
-    '/svg/logos/Logo5.svg',
-    '/svg/logos/Logo6.svg',
+    '/svg/logos/Logo1.svg',
+    '/svg/logos/Logo2.svg',
+    '/svg/logos/Logo3.svg',
+    '/svg/logos/Logo1.svg',
+    '/svg/logos/Logo2.svg',
+    '/svg/logos/Logo3.svg',
+    '/svg/logos/Logo1.svg',
+    '/svg/logos/Logo2.svg',
+    '/svg/logos/Logo3.svg',
+    '/svg/logos/Logo1.svg',
+    '/svg/logos/Logo2.svg',
+    '/svg/logos/Logo3.svg',
+    '/svg/logos/Logo1.svg',
+    '/svg/logos/Logo2.svg',
+    '/svg/logos/Logo3.svg',
+    '/svg/logos/Logo1.svg',
+    '/svg/logos/Logo2.svg',
+    '/svg/logos/Logo3.svg',
   ];
   return (
     // <div className="font-[family-name:var(--font-geist-sans)]">
@@ -44,7 +54,20 @@ export default function Home() {
 
       <header className='md:max-w-[1540px] mx-auto relative isolate'>
         <div className="bg-[url('/partners/hero.webp')] md:min-h-screen lg:min-h-[800px] bg-cover bg-no-repeat">
-          <nav className="w-full flex items-center justify-end py-4 p-2">
+          <nav className="w-full flex items-center justify-between py-4 p-2">
+            <div>
+              <Link href="/">
+                <span className="sr-only">Doculet</span>
+                <Image
+                  className="h-8 w-auto"
+                  alt="Doculet"
+                  src="/svg/Doculet_white_logo.svg"
+                  width={100}
+                  height={100}
+
+                />
+              </Link>
+            </div>
             <div className="">
               <ul className="flex items-center justify-center gap-8">
                 <li>Contact</li>
@@ -119,11 +142,11 @@ export default function Home() {
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className=" pb-4 text-3xl font-bold">{t('main.title')} <span className="text-bluetext">{t('main.title_colour')}</span></h2>
+            <h2 className=" pb-4 text-3xl font-bold md:max-w-[350px]">{t('main.title')}</h2>
             <div>
-              <ul className="space-y-5">
+              <ul className="space-y-3">
                 {keys.map((key) => (
-                  <li key={key.name} className="flex items-start justify-center gap-5">
+                  <li key={key.name} className="flex items-start gap-3">
                     <div className="">
                       <Image
                         className=""
@@ -136,7 +159,10 @@ export default function Home() {
 
                     <div>
                       <p className="font-bold text-base pb-2">{t(`main.lists.${key.name}.title`)}</p>
-                      <p className="text-sm">{t(`main.lists.${key.name}.subtext`)}</p>
+                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point1`)}</p>
+                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point2`)}</p>
+                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point3`)}</p>
+                      <p className="text-sm pb-2">{t(`main.lists.${key.name}.list.point4`)}</p>
                     </div>
                   </li>
                 ))}
@@ -154,11 +180,13 @@ export default function Home() {
         <div className="p-2 pt-12 md:p-12 ">
           <span className="text-yellowtext text-sm p-2 bg-white rounded-xl">{t('whatwedo.minitext')}</span>
           <h2 className="text-white text-4xl md:text-5xl font-bold md:max-w-[500px] py-6">
-          {t('whatwedo.title')}
+            {t('whatwedo.title')}
           </h2>
-
+          <p className="md:max-w-[500px] pb-2">
+            {t('whatwedo.firsttext')}
+          </p>
           <p className="md:max-w-[500px]">
-          {t('whatwedo.subtext')}
+            {t('whatwedo.subtext')}
           </p>
 
           <div className="flex gap-3 py-8">
@@ -170,10 +198,10 @@ export default function Home() {
       </section>
 
       <section className="md:max-w-[1540px] mx-auto relative isolate bg-white p-2 py-12 ">
-        <div className="md:max-w-[900px] mx-auto flex flex-col md:flex-row gap-2">
-          <div className="md:w-1/3 relative bg-[url('/partners/Partners.webp')] bg-contain bg-top  bg-no-repeat min-h-[350px]">
-            <div className="absolute top-[50%] md:top-[25%]  px-3">
-              <p className="text-black text-2xl font-bold pb-4"><span>{t('article.title')}</span> <span className="text-yellowtext">{t('article.title_colour')}</span> <span>{t('article.title_text')}</span></p>
+        <div className="md:max-w-[800px] mx-auto flex flex-col md:flex-row gap-6">
+          <div className="md:w-1/2 relative bg-[url('/partners/Partners.webp')] bg-contain bg-top  bg-no-repeat min-h-[350px]">
+            <div className="absolute top-[50%] px-3">
+              <p className="md:max-w-[250px] text-black text-2xl font-bold pb-4"><span>{t('article.title')}</span> <span className="text-yellowtext">{t('article.title_colour')}</span> <span>{t('article.title_text')}</span></p>
               <span className="text-greytext">{t('article.subtext')}</span>
 
               <div className="mt-3">
@@ -182,29 +210,42 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="md:w-2/3 md:pt-12 grid grid-cols-[repeat(auto-fit,_minmax(min(170px,_200px),_230px))] grid-flow-row auto-rows-[250px] gap-4 justify-center">
-            {services.map((service) => (
-              <div className="rounded-xl bg-lightbluetext p-2" key={service.name}>
-                <Image
-                  className=""
-                  src={service.image}
-                  alt={service.name}
-                  width={60}
-                  height={60}
-                />
-                <p className="font-bold text-base pb-2 text-blacktext">{t(`article.lists.${service.name}.title`)}</p>
-                <p className="text-sm text-greytext">{t(`article.lists.${service.name}.subtext`)}</p>
-              </div>
-            ))}
+
+          <div className="md:w-1/2 md:pt-12">
+            <h3 className="font-bold text-blacktext text-3xl">Be at the Forefront</h3>
+            <ul className="list-disc text-sm ml-4 space-y-3">
+              <li className="text-greytext">Shape the development of cutting-edge verification technology</li>
+              <li className="text-greytext">Enhance your institution&aposs global reputation for innovation</li>
+              <li className="text-greytext">Streamline your admissions and credential verification processes</li>
+            </ul>
+
           </div>
 
         </div>
 
-       
       </section>
 
-      <Contact/>
-      <Footer/>
+      <section className="md:max-w-[1540px] mx-auto relative isolate bg-white p-2 py-12 ">
+        <div className=" grid grid-cols-[repeat(auto-fit,_minmax(min(170px,_200px),_230px))] grid-flow-row auto-rows-[200px] gap-4 justify-center">
+          {services.map((service) => (
+            <div className="rounded-xl border border-[#001F7126] p-2" key={service.name}>
+              <Image
+                className=""
+                src={service.image}
+                alt={service.name}
+                width={60}
+                height={60}
+              />
+              <p className="font-bold text-base pb-2 text-blacktext">{t(`article.lists.${service.name}.title`)}</p>
+              <p className="text-sm text-greytext">{t(`article.lists.${service.name}.subtext`)}</p>
+            </div>
+          ))}
+        </div>
+
+      </section>
+
+      <Contact />
+      <Footer />
     </div>
   );
 }

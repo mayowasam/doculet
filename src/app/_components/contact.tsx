@@ -14,7 +14,7 @@ export default function Contact() {
           <span className="text-greytext">{t('subtext')}</span>
         </div>
         <div>
-          <Button size="large" href='mailto:support@saladafrica.com' shape="round" icon={<RightOutlined />} iconPosition="end">{t('buttontext')}</Button>
+          <Button size="large" href='' shape="round" icon={<RightOutlined />} iconPosition="end">{t('buttontext')}</Button>
         </div>
 
 

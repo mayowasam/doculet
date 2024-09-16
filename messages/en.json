@@ -1,37 +1,49 @@
 {
     "Partners": {
         "hero": {
-            "minitext": "Simplify and Verify Applications",
-            "title": "Empower Your Academic Journey Now",
-            "subtext": "Empowering African students with simplified document verification, financial assessments, and application processes for higher education access.",
+            "minitext": "Verification, Elevated",
+            "title": "Where Trust Meets Technology",
+            "subtext": "In a world of digital doubts, Doculet stands as your beacon of authenticity. We're not just verifying documents; we're validating dreams, securing futures, and building a foundation of trust for the digital age",
             "buttontext": "Join Waitlist"
         },
         "main": {
-            "title": "Do more with",
-            "title_colour": "Doculet",
+            "title": "Empowering Global Trust and Verification",
             "lists": {
                 "item1": {
                     "title": "Document Management",
-                    "subtext": "Efficient document management improves workflow by reducing time spent searching for files and eliminating redundant tasks. "
+                    "list": {
+                        "point1": "Establish a new paradigm in academic credentialing.",
+                        "point2": "Create seamless pathways for global student mobility.",
+                        "point3": "Safeguard the integrity of our educational institutions"
+                    }
                 },
                 "item2": {
                     "title": "Financial Verification",
-                    "subtext": "Ensure financial accuracy by implementing robust verification processes that minimize errors and discrepancies. "
+                    "list": {
+                        "point1": "Lightning-fast verification.",
+                        "point2": "Unbreakable security.",
+                        "point3": "Seamless integration",
+                        "point4": "Global accessibility"
+                    }
                 },
                 "item3": {
-                    "title": "Application Tracking",
-                    "subtext": "Effortlessly track the progress of your applications with a user-friendly system that offers real-time updates."
+                    "title": "Glimpse of the future",
+                    "list": {
+                        "point1": "Blockchain-secured credentials",
+                        "point2": "AI-assisted document verification",
+                        "point3": "Cross-border academic transcript translation",
+                        "point4": "Real-time verification status tracking"
+                    }
                 }
             }
         },
         "whatwedo": {
-            "minitext": "What we do",
-            "title": "Easy Applications & Hassle-free Process",
-            "subtext": "Doculet revolutionizes college application with a centralized platform for document verification and financial assessments, ensuring a seamless access.",
+            "minitext": "Verification",
+            "title": "Forge the Future of Academic Verification",
+            "firsttext":"Partner with Doculet to Redefine Trust in Education",
+            "subtext": "In the global academic landscape, trust is our most valuable currency. Doculet is building the gold standard for credential verification. Join us in shaping tomorrow's educational ecosystem.",
             "buttontext": "Get Started",
             "buttontext2": "Schedule a Call"
-
-
         },
         "article": {
             "title": "We are trusted by",
@@ -41,20 +53,20 @@
             "buttontext": "Get Started",
             "lists": {
                 "item1": {
-                    "title": "Lorem ipsum dolor",
-                    "subtext": "Efficient document management improves workflow by reducing time spent searching for files and eliminating redundant tasks. "
+                    "title": "Shared Innovation",
+                    "subtext": "Your insights drive our development. Let's co-create the future."
                 },
                 "item2": {
-                    "title": "Financial Verification",
-                    "subtext": "Ensure financial accuracy by implementing robust verification processes that minimize errors and discrepancies. "
+                    "title": "Tailored Integration",
+                    "subtext": "We adapt to your systems, not the other way around."
                 },
                 "item3": {
-                    "title": "Application Tracking",
-                    "subtext": "Effortlessly track the progress of your applications with a user-friendly system that offers real-time updates."
+                    "title": "Mutual Growth",
+                    "subtext": "As you thrive, we thrive. Your success is our success."
                 },
                 "item4": {
-                    "title": "Application Tracking",
-                    "subtext": "Effortlessly track the progress of your applications with a user-friendly system that offers real-time updates."
+                    "title": "Global Network",
+                    "subtext": "Join a community of forward-thinking institutions worldwide"
                 }
             }
         }
