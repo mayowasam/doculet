@@ -99,8 +99,8 @@ export default function Home() {
               </span>
               <span className="text-xs font-semibold">{t('hero.minitext')}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold py-6 ">{t('hero.title')}</h1>
-            <p className="md:max-w-[700px] md:text-center">{t('hero.subtext')}</p>
+            <h1 className="text-4xl text-white md:text-5xl font-bold py-6 ">{t('hero.title')}</h1>
+            <p className="text-white md:max-w-[700px] md:text-center">{t('hero.subtext')}</p>
 
             <div className="md:max-w-[500px] py-6">
               <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' icon={<RightOutlined className="text-sm" />} target="_blank" iconPosition="end"> {t('whatwedo.buttontext')}</Button>
