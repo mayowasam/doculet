@@ -9,11 +9,11 @@ export default function Contact() {
     <div className="bg-white">
 
       <div className="md:max-w-[1024px] mx-auto flex flex-col gap-3 text-center md:text-left md:flex-row md:justify-between p-12">
-        <div className="">
+        <div className="pb-4">
           <p className="font-bold text-[#101828]">{t('title')}</p>
           <span className="text-greytext">{t('subtext')}</span>
         </div>
-        <div>
+        <div className="">
           <Button size="large" href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank" shape="round" icon={<RightOutlined />} iconPosition="end">{t('buttontext')}</Button>
         </div>
 

@@ -182,15 +182,19 @@ export default function Home() {
             {t('whatwedo.subtext')}
           </p>
 
-          <div className="flex flex-col md:flex-row gap-3 py-8">
+          <div className="text-center  md:flex md:flex-row gap-3 py-8">
+            <div className="pb-4">
             <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank"  icon={<RightOutlined className="text-sm" />} iconPosition="end"> {t('whatwedo.buttontext')}</Button>
+            </div>
+            <div>
             <Button type="text" icon={<InfoCircleOutlined />} style={{ color: "white" }}> {t('whatwedo.buttontext2')}</Button>
+            </div>
           </div>
         </div>
 
       </section>
 
-      <section className="md:max-w-[1540px] mx-auto relative isolate bg-white p-2 py-12 ">
+      <section className="md:max-w-[1540px] mx-auto relative isolate bg-white p-2  ">
         <div className="md:max-w-[800px] mx-auto flex flex-col md:flex-row gap-6">
           <div className="md:w-1/2 relative bg-[url('/partners/Partners.webp')] bg-contain bg-top  bg-no-repeat min-h-[350px]">
             <div className="absolute top-[50%] px-3">
@@ -208,7 +212,7 @@ export default function Home() {
               <li className="text-greytext">Enhance your institution&aposs global reputation for innovation</li>
               <li className="text-greytext">Streamline your admissions and credential verification processes</li>
             </ul>
-            <div className="mt-6">
+            <div className="text-center md:text-left mt-6">
               <Button href='https://share.hsforms.com/1gCnh9AX2Q-ejMcDa1PwnBAs85ch' target="_blank" icon={<RightOutlined className="text-sm text-blue-500" />} iconPosition="end"> {t('article.buttontext')}</Button>
 
             </div>
@@ -220,7 +224,7 @@ export default function Home() {
 
       </section>
 
-      <section className="md:max-w-[1540px] mx-auto relative isolate bg-white p-2 py-12 ">
+      <section className="md:max-w-[1540px] mx-auto relative isolate bg-white px-2 py-12 md:py-6 ">
         <div className=" grid grid-cols-[repeat(auto-fit,_minmax(min(170px,_200px),_230px))] grid-flow-row auto-rows-[200px] gap-4 justify-center">
           {services.map((service) => (
             <div className="rounded-xl border border-[#001F7126] p-2" key={service.name}>
