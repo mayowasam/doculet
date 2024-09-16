@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   authors: [
     { name: "Doculet" },
-    { name: "Doculet", url: "https://doculet.vercel.app" },
+    { name: "Doculet", url: "https://doculet.com" },
   ],
   creator: "Doculet",
   publisher: "Doculet",
@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     address: true,
     telephone: true,
   },
-  metadataBase: new URL("https://doculet.vercel.app"),
+  metadataBase: new URL("https://doculet.com"),
   openGraph: {
     title: "Doculet",
     description: "Doculet stands as your beacon of authenticity. We're not just verifying documents; we're validating dreams, securing futures, and building a foundation of trust for the digital age",
-    url: "https://doculet.vercel.app/en",
+    url: "https://doculet.com/en",
 
     siteName: "Doculet",
     images: [
@@ -91,8 +91,8 @@ export const metadata: Metadata = {
     creator: "@doculet",
     // creatorId: '1467726470533754880',
     images: [
-      "https://doculet.vercel.app/en/Doculet.webp",
-      "https://doculet.vercel.app/Doculet.webp",
+      "https://doculet.com/en/Doculet.webp",
+      "https://doculet.com/Doculet.webp",
     ],
   },
 };
